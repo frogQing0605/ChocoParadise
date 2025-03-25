@@ -1,0 +1,59 @@
+.item img{
+    width: 360px;
+}
+
+.item h2{
+    color: black;
+    padding: 10px;
+}
+.item{
+    text-align: center;
+}
+button{
+    border-radius: 10px;
+    color: black;
+    font-weight: 600;
+    padding: 5px;
+    font-size: 18px;
+    margin: 50px 0;
+    cursor: pointer;
+}
+.order{
+    text-align: center;
+}
+
+.contein{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.itemText{
+    padding-left:70px;
+}
+
+.diyStyle>h2{
+    display: inline-block;
+    margin-right: 10px;
+   
+}
+.diyStyle>p{
+    display: inline-block;
+    padding:10px;
+    background-color: bisque;
+    margin-right: 10px;
+    border-radius: 360px;
+    text-align: center;
+}
+
+/* 手機斷點 */
+@media screen and (max-width:768px){
+    .contein{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid red; */
+    }
+}

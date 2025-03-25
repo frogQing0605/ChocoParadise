@@ -1,0 +1,167 @@
+main{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+/* 左邊選單 */
+div.list>ul.product li a{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px 10px;
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+}
+
+/* 右邊商品列 */
+.right{
+    width: 85%;
+    margin-left: 30px;
+}
+
+img.mainPhoto{
+    max-width: 450px;
+    max-height: 450px;
+}
+
+img.miniPhoto{
+    max-width: 120px;
+    max-height: 120px;
+}
+
+div.miniPhoto{
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+.wrapProduct{
+    max-width: 950px;
+    display: flex;
+    padding: 17px;
+}
+
+
+.order{
+    margin-left: 40px;
+    width: 400px;
+
+}
+.orderText{
+    margin-bottom: 100px;
+}
+
+.order p{
+    font-weight: 500;
+    line-height: 1.8em;
+}
+.label{
+    font-size: 18px;
+    display: block;
+}
+#date{
+    width: 96%;
+    display: block;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 5px;
+}
+#event{
+    width: 99%;
+    display: block;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 5px;
+}
+div.btnNum{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.btnNum button{
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 30%;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+}
+.btnNum button:hover{
+    color: rgb(255, 0, 0);
+    border: none;
+    font-weight: 700;
+}
+div.btnSbmt button{
+    padding: 2px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor:pointer;
+    border: 1px solid black;
+    width: 49%;
+}
+div.btnSbmt .cart{
+    background-color:#956134;
+    border-color: #956134;
+    color: white;
+}
+
+div.btnSbmt .cart:hover{
+    background-color:white;
+    border-color: #956134;
+    color:#956134;
+}
+div.btnSbmt .buy{
+    background-color: #962100;
+    border-color: #962100;
+    color: white;
+}
+div.btnSbmt .buy:hover{
+    background-color: white;
+    border-color: #962100;
+    color: #962100;
+}
+
+/* 手機斷點 */
+ @media screen and (max-width:768px) {
+    div.left{
+        display: none;
+    }
+
+    div.right{
+        width: 100%;
+        margin: 0;
+    }
+    
+    .wrapProduct{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    
+    .order{
+        width: 65%;
+        margin-top: 30px;
+        padding: 0 50px;
+    }
+    
+    .features{
+        width: 90%;
+        margin: auto;
+    }
+    .features> h2,h3{
+        text-align: center;        
+    }
+
+
+} 

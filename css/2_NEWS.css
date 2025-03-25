@@ -1,0 +1,49 @@
+.newsPhoto{
+    width: 180px;
+    height: 180px;
+}
+ul.news li a{
+    width: 535px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 30px 0;
+}
+
+ul.news li a .newsText{
+    margin-left: 10px;
+}
+
+ul.news{
+    width: 1200px;
+    margin: auto;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.numberLine{
+    text-align: center;
+}
+.numberLine a{
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+
+/* 手機斷點 */
+@media screen and (max-width:768px){
+
+
+    ul.news {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+
+} 

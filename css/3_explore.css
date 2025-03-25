@@ -1,0 +1,122 @@
+div.intro{
+    width:100%;
+    margin: auto;
+    display: flex;
+    /* background-color: #d9cab3c3; */
+    background: radial-gradient(circle,#fde9d8,#ffba82,#fe9844);
+    align-items: center;
+}
+div.intro img{
+    width: 50%;
+    height: 50%;
+}
+div.introText{
+    width: 50%;
+}
+div.introText-inner>p{
+    padding: 0 15%;
+
+}
+
+div.box{
+    width: 270px;
+    background: linear-gradient(#fde9d8 30%,#fe6044);
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+}
+.box hr{
+    width: 90%;
+}
+div.box>p{
+    text-align: left;
+    font-size: 18px;
+    padding: 5px ;
+}
+
+
+.information{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.contein img{
+    width: 360px;
+}
+
+.contein h2{
+    color: black;
+    margin: 15px;
+}
+
+.act{
+    width:1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.contein{
+    text-align: center;
+}
+button{
+    border-radius: 10px;
+    color: black;
+    font-weight: 600;
+    padding: 5px;
+    font-size: 18px;
+    margin: 50px 0;
+    cursor: pointer;
+}
+.order{
+text-align: center;
+}
+
+
+/* 手機斷點 */
+@media screen and (max-width:768px){
+    .introLeft-img{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .introRight-img{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    div.intro{
+        background: radial-gradient(circle,#fde9d833,#ffba8233,#fe984433),;
+
+    }
+    div.intro img{
+        width: 100%;
+        height: 100%;
+    }
+    div.introText{
+        width: 100%;
+    }
+    div.introText-inner>p{
+        padding: 10px ;   
+        margin: 0 20px;         
+    }
+
+    .information, .act{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        /* margin: 30px; */
+
+    }
+    .information>.box {
+        margin: 30px;
+    }
+    .act .contein{
+        margin: 30px;
+
+    }
+} 

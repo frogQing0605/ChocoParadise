@@ -1,0 +1,50 @@
+table {
+    width: 1100px;
+    margin: auto;
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    font-size: 18px;
+}
+
+td,th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px 20px;
+}
+
+tr:nth-child(1){
+    background-color: #ba3200;
+    color: #ffffff;
+    text-align: center;
+}
+
+td:nth-child(1){
+    background-color: #ba3200;
+    color: #ffffff;
+    text-align: center;
+    width: 15%;
+}
+td:nth-child(2){
+    width: 15%;
+    text-align: center;
+}
+td:nth-child(3){
+    width: 35%;
+}
+td:nth-child(4){
+    width: 35%;
+}
+
+td.noColor{
+    background-color: #ffffff;
+    color: #000000;
+    text-align: left;
+}
+
+/* 手機斷點 */
+@media screen and (max-width:768px){
+    table{
+        width: 100%;
+    }
+}

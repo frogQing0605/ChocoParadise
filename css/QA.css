@@ -1,0 +1,55 @@
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.material-symbols-outlined{
+    padding-top: 5px;
+    &.active{
+        transform: rotate(180deg);
+    }
+}
+
+
+
+.content h2,p{
+    padding-left: 10px;
+}
+
+.content p{
+    font-size: 20px;
+}
+
+.contentTitle{
+    padding-right: 5px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    &:hover{
+        background-color: #feb5b5;
+    }
+}
+
+
+.contentText{
+    border: 1px solid #ccc;
+    padding: 15px 0;
+    font-weight: 400;
+    display: none;
+}
+
+.content{
+    width: 1200px;
+    margin: auto;
+}
+
+/* 手機斷點 */
+@media screen and (max-width:768px){
+    .content{
+        width: 100%;
+    }
+}

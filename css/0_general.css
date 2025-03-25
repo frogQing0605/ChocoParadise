@@ -1,0 +1,322 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Noto Sans TC;            
+}
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.logo{
+    width: 100px;
+    height: 80px;
+}
+
+/* 漢堡選單 */
+.hamburger {
+    display: none;
+    flex-direction: column;
+ }
+
+ .hamburger span{
+     width: 25px;
+     height: 3px;
+     background-color: black;
+     margin: 3px 0;
+     transform-origin: left;
+     cursor: pointer;
+     transition: .3s ease;
+ }
+
+ .hamburger.active span:nth-child(1){
+     transform: rotate(45deg);
+ }
+ .hamburger.active span:nth-child(2){
+     opacity: 0;
+ }
+ .hamburger.active span:nth-child(3){
+     transform: rotate(-45deg);
+ }
+
+nav{
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    display: flex;
+    justify-content:space-around; 
+    align-items: center;  
+}
+
+hr{
+    max-width:1200px;
+}
+
+nav div.menu > ul.list >li {
+    list-style: none;   
+    /* margin-left: 20px;   */
+    padding: 0 5px;
+    display: inline-block;
+    vertical-align: top;  
+    position: relative;
+}
+nav div.menu > ul.list > li > a { 
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 5px 10px;
+} 
+
+nav>div.menu > ul.list ul.dropdown-open{
+    position: absolute;
+    top: 30px;
+    left: 5px;
+    display: none;
+    z-index: 100;    
+}
+nav>div.menu > ul.list  li:hover ul{
+    display: block;
+} 
+nav>div.menu > ul.list ul.dropdown-open a {
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 100px;
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+}
+
+nav div.menu > ul.list > li  a:hover{
+    background-color: rgb(189, 47, 15);
+    color: white;
+}
+
+
+h1{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+h1::after{
+    content: '';
+    /* 插入一條裝飾線 */
+    display: inline-block;
+    width: 200px;
+    height: 2px;
+    background-color: #37140d;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+h1::before{
+    content: '';
+    /* 插入一條裝飾線 */
+    display: inline-block;
+    width: 200px;
+    height: 2px;
+    background-color: #37140d;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+h2{
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+p{
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #5E0B15;
+    color: white;
+    text-align: center;
+    align-content: center;
+    margin-top: 90px;
+}
+footer>p{
+    margin: 10px;
+    padding: 0;
+}
+div.foot{
+    width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+div.foot .social_media img{
+    width: 40px;
+    height: 40px;
+    padding-right: 10px;
+}
+
+.to-top{
+    display: none;
+    color: #37140d;
+    background-color: antiquewhite;
+    font-size: 18px;
+    width: 50px;
+    height: 50px;
+    border-radius: 180px;
+    text-align: center;
+    align-content: center;
+    text-transform: uppercase;
+    position: fixed;
+    right: 50px;  
+    bottom: 50px;
+    border: none;
+    cursor: pointer;
+    z-index: 500;
+}
+
+
+
+.to-top:hover{
+    background-color: rgb(253, 214, 164);
+}
+
+div.btnNum{
+    width:96%;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.btnNum button{
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 30%;
+    font-size: 18px;
+    cursor: pointer;
+    /* border: 2px solid #bcbcbc; */
+    border: none;
+    background-color: white;
+}
+.btnNum button:hover{
+    color: rgb(255, 0, 0);
+    border: none;
+    font-weight: 700;
+}
+
+div.btnNum input.num{
+    border: none;
+    text-align: center;
+}
+
+.btnNum input{
+    width: 100%;
+    
+}
+
+
+/* 手機斷點 */
+@media screen and (max-width:768px){
+    h1,h2,p{
+        font-size: 0.75 em;
+    }
+    h1::after{
+        width: 20%;
+    }
+    h1::before{
+        width: 20%;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+
+    nav , hr{
+        width: 100%;
+    }
+    
+    ul.list{
+        flex-direction: column;
+        background-color: wheat;
+        width: 100%;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        height: 70%;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        z-index: 100;
+    }
+
+    nav div.menu > ul.list > li > a { 
+        border: 1px solid rgba(0, 0, 0, 0);
+        padding: 0px;
+    } 
+
+    nav div.menu > ul.list > li:hover{
+        background-color: rgb(189, 47, 15);
+        width: 100%;
+        text-align: center;
+    }
+    
+    ul.list.active{
+        display: flex;
+    }
+    
+
+    ul.list li{
+        margin:10px 0;
+    }
+
+    nav>div.menu > ul.list ul.dropdown-open{
+        display: none;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        background-color: rgb(255, 218, 139);
+        z-index: 100; 
+        left: 0;
+    }
+
+    
+
+   
+
+    nav>div.menu > ul.list ul.dropdown-open a {
+        text-decoration: none;
+        border: rgba(0, 0, 0, 0);
+        width:100%;
+        display: inline-block;
+        padding: px;
+        text-align: center;
+        background-color: rgb(255, 218, 139);
+    }
+
+    ul.dropdown-open li{
+        margin: 0;
+    }
+    
+    div.foot{
+        width: 100%;
+    }
+} 
